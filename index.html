@@ -1,367 +1,357 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07090d">
-  <meta name="description" content="Omid Hosseinpoor — AI & Data Systems Builder. Portfolio, experience, selected projects and technical focus.">
+  <meta name="theme-color" content="#f6f8fb">
+  <meta name="description" content="Omid Hosseinpoor — AI & Data Systems Builder. Selected systems, experience, technical focus and contact.">
   <meta property="og:title" content="Omid Hosseinpoor — AI & Data Systems Builder">
-  <meta property="og:description" content="I build decision systems that connect data, business questions and AI to usable software.">
+  <meta property="og:description" content="Building decision-oriented software at the intersection of data, business and AI.">
   <meta property="og:type" content="website">
-  <!-- TODO: Add a canonical URL once the final domain is chosen. -->
+  <!-- TODO: Add your canonical URL when the final domain is chosen. -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <title>OMID HOSSEINPOOR — AI & Data Systems Builder</title>
+  <title>Omid Hosseinpoor — AI & Data Systems Builder</title>
 </head>
+
 <body>
-  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="OMIND home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" fill="none">
-          <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="5"/>
-          <path d="M16 27.5c2.9-4.8 6.2-7.1 9.8-7.1 2.5 0 4.7 1.1 6.2 3.3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="17.1" cy="27.2" r="2.1" fill="currentColor"/>
-          <circle cx="32" cy="23.7" r="2.1" fill="currentColor"/>
-        </svg>
-      </span>
-      <span class="brand-copy">
-        <strong>OMIND</strong>
-        <small>HUMAN × COMPUTER × AI</small>
-      </span>
-    </a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="identity" href="#top" aria-label="Omid Hosseinpoor">
+        <span class="identity-mark" aria-hidden="true">OH</span>
+        <span class="identity-name">
+          <strong>OMID HOSSEINPOOR</strong>
+          <small>AI · DATA · SYSTEMS</small>
+        </span>
+      </a>
 
-    <nav class="desktop-nav" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#system">Thinking</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work" data-i18n="navWork">Work</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#thinking" data-i18n="navThinking">Thinking</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
 
-    <a class="header-cta" href="#contact">
-      <span>Let’s build</span><span aria-hidden="true">↗</span>
-    </a>
+      <div class="top-actions">
+        <button id="languageToggle" class="lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-active">EN</span><span>/</span><span>FA</span>
+        </button>
+        <a class="top-cta" href="#contact" data-i18n="headerCta">Let’s talk <span>↗</span></a>
+      </div>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> AI / DATA / SOFTWARE SYSTEMS</div>
-        <h1>Turning messy reality into <em>working systems.</em></h1>
-        <p class="hero-lede">
-          I build decision-oriented software at the intersection of business data, analytics and AI —
-          from the first question to a usable product.
+  <main id="main">
+    <section id="top" class="hero page-shell">
+      <div class="hero-main">
+        <p class="kicker"><span class="pulse"></span><span data-i18n="heroKicker">AI / DATA / SOFTWARE SYSTEMS</span></p>
+
+        <h1 data-i18n="heroTitle">I build systems that turn <em>data into decisions.</em></h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          AI and data builder with real business analytics experience. I move from messy operational data and unclear questions to usable software, decision support and measurable workflows.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore selected work <span>↘</span></a>
-          <!-- TODO: Replace the href with the final hosted PDF/CV URL. -->
-          <a class="button button-ghost" href="#contact">Resume / CV <span>↗</span></a>
+          <a class="button button-primary" href="#work"><span data-i18n="heroWork">See selected work</span><span>↓</span></a>
+          <!-- TODO: Replace this href with your final CV/PDF URL. -->
+          <a class="button button-secondary" href="#contact"><span data-i18n="heroCv">CV / Resume</span><span>↗</span></a>
         </div>
 
-        <div class="hero-meta">
-          <span>3 years in HR analytics & BI</span>
-          <span>Computer Science · 2027</span>
-          <span>Open to European opportunities</span>
+        <div class="proof-line">
+          <span><b>03+</b> <span data-i18n="proofYears">years in analytics & BI</span></span>
+          <span><b>110+</b> <span data-i18n="proofPeople">people covered in a core dashboard</span></span>
+          <span><b>2027</b> <span data-i18n="proofDegree">BSc Computer Science</span></span>
         </div>
       </div>
 
-      <div class="hero-system" aria-label="System builder visual">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="orbit orbit-c"></div>
-        <div class="system-core">
-          <div class="core-kicker">MISSION → SYSTEM</div>
-          <div class="core-title">OMIND</div>
-          <div class="core-line"><span></span><b>OBSERVE</b><span></span></div>
-          <div class="core-line"><span></span><b>MODEL</b><span></span></div>
-          <div class="core-line"><span></span><b>ACT</b><span></span></div>
+      <aside class="hero-side">
+        <div class="profile-card">
+          <div class="card-label" data-i18n="snapshotLabel">PROFILE SNAPSHOT</div>
+          <div class="snapshot-list">
+            <div>
+              <span data-i18n="snapshotFocusLabel">Focus</span>
+              <strong data-i18n="snapshotFocus">AI integration · data systems</strong>
+            </div>
+            <div>
+              <span data-i18n="snapshotStrengthLabel">Strength</span>
+              <strong data-i18n="snapshotStrength">Business context + analytical thinking</strong>
+            </div>
+            <div>
+              <span data-i18n="snapshotModeLabel">Working mode</span>
+              <strong data-i18n="snapshotMode">Observe → model → build → learn</strong>
+            </div>
+            <div>
+              <span data-i18n="snapshotOpenLabel">Availability</span>
+              <strong data-i18n="snapshotOpen">Open to international opportunities</strong>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span class="status-dot"></span>
+            <span data-i18n="snapshotFoot">Currently moving from analytics into AI-powered software systems.</span>
+          </div>
         </div>
-        <div class="floating-card card-one">
-          <small>FOCUS</small>
-          <strong>AI + Data</strong>
+
+        <div class="hero-index">
+          <span>01</span>
+          <span data-i18n="indexHero">INTRODUCTION</span>
         </div>
-        <div class="floating-card card-two">
-          <small>LOOP</small>
-          <strong>Question → Action</strong>
-        </div>
-        <div class="floating-card card-three">
-          <small>MODE</small>
-          <strong>Build / Test / Learn</strong>
-        </div>
-      </div>
+      </aside>
     </section>
 
-    <section class="signal-strip">
-      <div class="signal-track section-shell">
-        <span>POWER BI</span><i>·</i><span>PYTHON</span><i>·</i><span>SQL</span><i>·</i><span>AI / LLM</span><i>·</i>
-        <span>NEXT.JS</span><i>·</i><span>DATA SYSTEMS</span><i>·</i><span>DECISION INTELLIGENCE</span>
-      </div>
+    <section class="statement page-shell">
+      <div class="statement-line"></div>
+      <p data-i18n="statement">
+        The interesting part is rarely the dashboard. It is discovering the question underneath the data — then building the system that can answer it and act on it.
+      </p>
     </section>
 
-    <section id="work" class="section-shell content-section">
-      <div class="section-heading">
+    <section id="work" class="section page-shell">
+      <div class="section-head">
         <div>
-          <div class="eyebrow">SELECTED WORK</div>
-          <h2>Projects that show <em>how I think.</em></h2>
+          <p class="kicker muted"><span>02</span><span data-i18n="workKicker">SELECTED SYSTEMS</span></p>
+          <h2 data-i18n="workTitle">Work, with enough context to understand <em>why it exists.</em></h2>
         </div>
-        <p>Real repositories, prototypes and system concepts — presented with their current status instead of pretending every project is production-ready.</p>
+        <p class="section-note" data-i18n="workNote">Real repositories and prototypes. Status is stated explicitly; unfinished work is not presented as production software.</p>
       </div>
 
-      <div class="project-grid">
-        <article class="project-card project-featured">
-          <div class="project-top">
-            <span class="project-index">01</span>
-            <span class="project-status">PRODUCT / BUILDING</span>
+      <div class="work-list">
+        <article class="work-card featured">
+          <div class="work-meta">
+            <span>01</span>
+            <span data-i18n="projectStatusBuilding">PRODUCT / BUILDING</span>
           </div>
-          <div class="project-body">
-            <div class="project-mark mark-cyan">D</div>
-            <h3>DataNizer</h3>
-            <p>Productized data cleaning, reporting and automation — designed to turn everyday business files into usable, decision-ready data.</p>
-            <div class="tag-row">
-              <span>Next.js 16</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>OpenAI</span>
+          <div class="work-grid">
+            <div>
+              <p class="project-type" data-i18n="datanizerType">DATA PRODUCT</p>
+              <h3>DataNizer</h3>
+              <p class="project-lead" data-i18n="datanizerLead">Turn everyday business files into cleaner, more structured, decision-ready data and reporting workflows.</p>
             </div>
-            <a class="project-link" href="https://github.com/mhrhpr/omindlab-datanizer" target="_blank" rel="noreferrer">View repository ↗</a>
+            <div class="work-details">
+              <div>
+                <span data-i18n="problemLabel">Problem</span>
+                <p data-i18n="datanizerProblem">Business teams spend time fixing inconsistent files before they can use the data.</p>
+              </div>
+              <div>
+                <span data-i18n="approachLabel">Approach</span>
+                <p data-i18n="datanizerApproach">Productize cleaning, profiling, reporting and AI-assisted analysis around a simple upload-to-outcome flow.</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-bottom">
+            <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>OpenAI</span></div>
+            <a href="https://github.com/mhrhpr/omindlab-datanizer" target="_blank" rel="noreferrer" class="text-link"><span data-i18n="repo">Repository</span> ↗</a>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-index">02</span>
-            <span class="project-status">SYSTEM / FOUNDATION</span>
-          </div>
-          <div class="project-body">
-            <div class="project-mark">M</div>
-            <h3>OMIND Mobility Intelligence</h3>
-            <p>An end-to-end mobility and logistics decision system: ingest, validate, align context, predict, recommend, observe reality and reconcile.</p>
-            <div class="tag-row">
-              <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>SQLite</span><span>pytest</span>
+        <article class="work-card">
+          <div class="work-meta"><span>02</span><span data-i18n="projectStatusFoundation">SYSTEM / FOUNDATION</span></div>
+          <div class="work-grid compact">
+            <div>
+              <p class="project-type">MOBILITY INTELLIGENCE</p>
+              <h3>OMIND Mobility Intelligence</h3>
             </div>
-            <a class="project-link" href="https://github.com/mhrhpr/MOBILITY_LOGISTIC" target="_blank" rel="noreferrer">View repository ↗</a>
+            <div class="work-details">
+              <p data-i18n="mobilityLead">An end-to-end decision system connecting external conditions, operational context, prediction, recommendation and post-trip reconciliation.</p>
+            </div>
+          </div>
+          <div class="work-bottom">
+            <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>SQLite</span><span>pytest</span></div>
+            <a href="https://github.com/mhrhpr/MOBILITY_LOGISTIC" target="_blank" rel="noreferrer" class="text-link"><span data-i18n="repo">Repository</span> ↗</a>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-index">03</span>
-            <span class="project-status">RESEARCH / DATA</span>
-          </div>
-          <div class="project-body">
-            <div class="project-mark">B</div>
-            <h3>Decision Intelligence</h3>
-            <p>An evidence-grounded historical decision model that keeps facts, reconstructed reasoning, uncertainty and criticism explicitly separated.</p>
-            <div class="tag-row">
-              <span>Data Modeling</span><span>Evidence</span><span>Decision Systems</span>
+        <article class="work-card">
+          <div class="work-meta"><span>03</span><span data-i18n="projectStatusResearch">RESEARCH / DATA</span></div>
+          <div class="work-grid compact">
+            <div>
+              <p class="project-type">DECISION INTELLIGENCE</p>
+              <h3>Bichilinger Decision Intelligence</h3>
             </div>
-            <a class="project-link" href="https://github.com/mhrhpr/bichilinger-decision-intelligence" target="_blank" rel="noreferrer">View repository ↗</a>
+            <div class="work-details">
+              <p data-i18n="decisionLead">Evidence-grounded historical decision modeling that keeps factual record, reconstruction, uncertainty and criticism explicitly separated.</p>
+            </div>
+          </div>
+          <div class="work-bottom">
+            <div class="tags"><span>Data Modeling</span><span>Evidence</span><span>Decision Systems</span></div>
+            <a href="https://github.com/mhrhpr/bichilinger-decision-intelligence" target="_blank" rel="noreferrer" class="text-link"><span data-i18n="repo">Repository</span> ↗</a>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-index">04</span>
-            <span class="project-status">AI PRODUCT / FRONTEND</span>
-          </div>
-          <div class="project-body">
-            <div class="project-mark">P</div>
-            <h3>PromptShop</h3>
-            <p>RTL Next.js frontend for an AI workflow marketplace, structured around role-first, problem-first and pack-first discovery.</p>
-            <div class="tag-row">
-              <span>Next.js</span><span>React</span><span>UX Architecture</span><span>RTL</span>
+        <article class="work-card">
+          <div class="work-meta"><span>04</span><span data-i18n="projectStatusAi">AI PRODUCT / FRONTEND</span></div>
+          <div class="work-grid compact">
+            <div>
+              <p class="project-type">PROMPTSHOP</p>
+              <h3>PromptShop</h3>
             </div>
-            <a class="project-link" href="https://github.com/mhrhpr/promptsshop" target="_blank" rel="noreferrer">View repository ↗</a>
+            <div class="work-details">
+              <p data-i18n="promptLead">RTL Next.js frontend for an AI workflow marketplace, organized around role-first, problem-first and pack-first discovery.</p>
+            </div>
+          </div>
+          <div class="work-bottom">
+            <div class="tags"><span>Next.js</span><span>React</span><span>UX</span><span>RTL</span></div>
+            <a href="https://github.com/mhrhpr/promptsshop" target="_blank" rel="noreferrer" class="text-link"><span data-i18n="repo">Repository</span> ↗</a>
           </div>
         </article>
+      </div>
 
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-index">05</span>
-            <span class="project-status">DATA ENGINEERING / PRACTICE</span>
-          </div>
-          <div class="project-body">
-            <div class="project-mark">W</div>
-            <h3>World Cup Data Pipeline</h3>
-            <p>A focused engineering exercise around data pipeline thinking and reproducible workflows.</p>
-            <div class="tag-row">
-              <span>Data Pipeline</span><span>Python</span><span>Engineering Practice</span>
-            </div>
-            <a class="project-link" href="https://github.com/mhrhpr/worldcup-2026-data-pipeline" target="_blank" rel="noreferrer">View repository ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card project-dark">
-          <div class="project-top">
-            <span class="project-index">06</span>
-            <span class="project-status">AI / PROTOTYPE</span>
-          </div>
-          <div class="project-body">
-            <div class="project-mark mark-outline">O</div>
-            <h3>OMIND Manager</h3>
-            <p>A business-facing prototype exploring a different interaction model: upload data, surface the right questions, then move toward action.</p>
-            <div class="tag-row">
-              <span>Next.js</span><span>Data UX</span><span>Decision Support</span>
-            </div>
-            <a class="project-link" href="https://github.com/mhrhpr/omind-manager" target="_blank" rel="noreferrer">View repository ↗</a>
-          </div>
-        </article>
+      <div class="supporting-work">
+        <div class="supporting-label" data-i18n="supporting">ADDITIONAL WORK</div>
+        <a href="https://github.com/mhrhpr/worldcup-2026-data-pipeline" target="_blank" rel="noreferrer"><span>World Cup Data Pipeline</span><span>Python · Data Pipeline ↗</span></a>
+        <a href="https://github.com/mhrhpr/omind-manager" target="_blank" rel="noreferrer"><span>OMIND Manager</span><span>Next.js · Decision Support ↗</span></a>
+        <a href="https://github.com/mhrhpr/python-engineering-journey" target="_blank" rel="noreferrer"><span>Python Engineering Journey</span><span>Engineering Practice ↗</span></a>
       </div>
     </section>
 
-    <section id="experience" class="section-shell content-section">
-      <div class="section-heading">
+    <section id="experience" class="section page-shell">
+      <div class="section-head">
         <div>
-          <div class="eyebrow">EXPERIENCE</div>
-          <h2>From reporting to <em>systems.</em></h2>
+          <p class="kicker muted"><span>03</span><span data-i18n="experienceKicker">EXPERIENCE</span></p>
+          <h2 data-i18n="experienceTitle">Business data first.<br><em>Software next.</em></h2>
         </div>
-        <p>My professional edge comes from working close to real organizational data and the decisions people actually make with it.</p>
+        <p class="section-note" data-i18n="experienceNote">The useful combination is not “analytics vs engineering”. It is understanding the business problem well enough to engineer a better system around it.</p>
       </div>
 
-      <div class="experience-layout">
+      <div class="experience">
         <div class="experience-main">
-          <div class="timeline-item">
-            <span class="timeline-marker">01</span>
-            <div>
-              <!-- TODO: Replace the approximate duration with exact employment dates. -->
-              <div class="role-line"><strong>HR Data Analyst / BI & Information Analytics</strong><span>3 years · Kerman Motor · Automotive</span></div>
-              <h3>Turning workforce data into decisions.</h3>
-              <p>Built a 15-page Power BI performance dashboard for a 110+ person population, alongside analysis across workforce structure, compensation, leave, overtime, retention, hiring and operating costs.</p>
-              <div class="impact-grid"><div><b>110+</b><span>Employees covered in a core performance dashboard</span></div>
-                <div><b>Power BI</b><span>DAX · modeling · KPI design</span></div>
-                <div><b>Excel</b><span>Advanced analysis · automation</span></div>
-                <div><b>Python</b><span>Cleaning · analysis · exploration</span></div>
-                <div><b>SQL</b><span>Relational querying · data work</span></div>
-              </div>
+          <article class="experience-item">
+            <div class="experience-date"><span>01</span><small>3 YEARS</small></div>
+            <div class="experience-content">
+              <p class="eyebrow-small" data-i18n="exp1Role">KERMAN MOTOR · AUTOMOTIVE</p>
+              <h3 data-i18n="exp1Title">HR Data Analyst / BI & Information Analytics</h3>
+              <p data-i18n="exp1Text">Built performance and workforce analytics using Power BI, DAX and Excel, covering workforce structure, performance, compensation, leave, overtime, retention, hiring and operational costs. A core performance dashboard covered 110+ employees across a 15-page reporting flow.</p>
+              <div class="experience-tags"><span>Power BI</span><span>DAX</span><span>Excel</span><span>Python</span><span>SQL</span></div>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <span class="timeline-marker">02</span>
-            <div>
-              <div class="role-line"><strong>Independent Data / Product Builder</strong><span>Selected projects</span></div>
-              <h3>Moving from dashboards to software.</h3>
-              <p>Experimenting with data products, AI workflows and decision systems that connect business questions, structured data and executable software.</p>
-              <div class="tag-row">
-                <span>AI integration</span><span>Data products</span><span>Decision intelligence</span><span>Web systems</span>
-              </div>
+          <article class="experience-item">
+            <div class="experience-date"><span>02</span><small data-i18n="exp2Meta">SELECTED BUILDS</small></div>
+            <div class="experience-content">
+              <p class="eyebrow-small" data-i18n="exp2Role">INDEPENDENT DATA / PRODUCT BUILDER</p>
+              <h3 data-i18n="exp2Title">From dashboards to decision-oriented software</h3>
+              <p data-i18n="exp2Text">Building product experiments around data cleaning, AI integration, workflow design, decision intelligence and operational systems — with GitHub repositories used as public evidence of the engineering direction.</p>
+              <div class="experience-tags"><span>AI Integration</span><span>Data Products</span><span>Decision Intelligence</span><span>Web Systems</span></div>
             </div>
-          </div>
+          </article>
         </div>
 
-        <aside class="career-card">
-          <div class="eyebrow">CURRENT DIRECTION</div>
-          <div class="direction">AI + Data<br><em>Systems</em></div>
-          <p>I am intentionally moving from descriptive analytics toward building AI-powered systems that can understand context, connect tools and produce useful outcomes.</p>
-          <div class="mini-stat"><span>Target horizon</span><strong>2027 → 2028</strong></div>
-          <div class="mini-stat"><span>Education</span><strong>BSc Computer Science</strong></div>
-          <div class="mini-stat"><span>Language</span><strong>English B1 · German A1</strong></div>
+        <aside class="facts-card">
+          <p class="kicker muted" data-i18n="factsKicker">CURRENT PROFILE</p>
+          <div class="fact">
+            <span data-i18n="fact1Label">Education</span>
+            <strong data-i18n="fact1Value">BSc Computer Science · expected 2027</strong>
+          </div>
+          <div class="fact">
+            <span data-i18n="fact2Label">English</span>
+            <strong data-i18n="fact2Value">B1 / Intermediate</strong>
+          </div>
+          <div class="fact">
+            <span data-i18n="fact3Label">German</span>
+            <strong data-i18n="fact3Value">A1 / Beginner</strong>
+          </div>
+          <div class="fact">
+            <span data-i18n="fact4Label">Direction</span>
+            <strong data-i18n="fact4Value">AI integration + data systems</strong>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section id="system" class="section-shell content-section system-section">
-      <div class="system-copy">
-        <div class="eyebrow">HOW I THINK</div>
-        <h2>My default loop is <em>observe → question → model → act.</em></h2>
-        <p>
-          A dashboard is not the endpoint. I care about the hidden question inside the data,
-          the model that makes the question testable, and the software that turns the result into an action.
-        </p>
-        <div class="principle-list">
-          <div><span>01</span><b>Start with the decision</b><p>What will somebody do differently because this system exists?</p></div>
-          <div><span>02</span><b>Respect evidence</b><p>Keep source truth, assumptions, confidence and limitations visible.</p></div>
-          <div><span>03</span><b>Close the loop</b><p>Measure reality after the decision and learn from the difference.</p></div>
-        </div>
-      </div>
-
-      <div class="loop-visual" aria-hidden="true">
-        <div class="loop-ring"></div>
-        <div class="loop-node node-top"><small>01</small><b>OBSERVE</b></div>
-        <div class="loop-node node-right"><small>02</small><b>QUESTION</b></div>
-        <div class="loop-node node-bottom"><small>03</small><b>MODEL</b></div>
-        <div class="loop-node node-left"><small>04</small><b>ACT</b></div>
-        <div class="loop-center"><span>LEARN</span><strong>↻</strong></div>
-      </div>
-    </section>
-
-    <section id="about" class="section-shell content-section about-section">
-      <div>
-        <div class="eyebrow">ABOUT</div>
-        <h2>Builder mindset, <em>business context.</em></h2>
-      </div>
-      <div class="about-text">
-        <p>I started close to business problems, where the hard part was rarely the chart itself. It was figuring out what the data meant, which question mattered, and what a manager could actually do next.</p>
-        <p>Computer Science gave me the second half of that equation: software, systems and engineering. Now I am combining both sides — analytical thinking with product and AI engineering.</p>
-        <div class="bio-note">
-          <span class="bio-symbol">+</span>
-          <span>Not interested in building AI for the sake of AI. Interested in building systems that make people and organizations see, decide and act better.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell content-section capabilities">
-      <div class="capability-card">
-        <span>01</span>
-        <h3>AI Product Engineering</h3>
-        <p>LLM APIs, AI workflows, structured outputs, tool use and product integration.</p>
-      </div>
-      <div class="capability-card">
-        <span>02</span>
-        <h3>Data & Decision Systems</h3>
-        <p>Data modeling, analytics, quality, context construction, KPIs and decision loops.</p>
-      </div>
-      <div class="capability-card">
-        <span>03</span>
-        <h3>Business Intelligence</h3>
-        <p>Power BI, DAX, Excel and operational reporting grounded in real business questions.</p>
-      </div>
-      <div class="capability-card">
-        <span>04</span>
-        <h3>Web Systems</h3>
-        <p>React / Next.js interfaces and product surfaces that make complex systems usable.</p>
-      </div>
-    </section>
-
-    <section class="section-shell content-section stack-section">
-      <div>
-        <div class="eyebrow">TOOLBOX</div>
-        <h2>Tools I use to turn <em>ideas into artifacts.</em></h2>
-      </div>
-      <div class="stack-cloud" aria-label="Technology stack">
-        <span>Python</span><span>Power BI</span><span>DAX</span><span>SQL</span><span>Excel</span>
-        <span>Power Query</span><span>TypeScript</span><span>JavaScript</span><span>React</span><span>Next.js</span>
-        <span>PostgreSQL</span><span>Prisma</span><span>FastAPI</span><span>SQLAlchemy</span><span>OpenAI APIs</span>
-        <span>Git</span><span>GitHub</span><span>Linux</span><span>Vercel</span>
-      </div>
-    </section>
-
-    <section id="contact" class="section-shell contact-section">
-      <div class="contact-panel">
+    <section id="thinking" class="section section-tinted page-shell">
+      <div class="section-head">
         <div>
-          <div class="eyebrow">CONTACT / OPPORTUNITIES</div>
-          <h2>Have a hard data problem?<br><em>Let’s turn it into a system.</em></h2>
+          <p class="kicker muted"><span>04</span><span data-i18n="thinkingKicker">HOW I THINK</span></p>
+          <h2 data-i18n="thinkingTitle">The loop I keep coming back to.</h2>
         </div>
-        <div class="contact-side">
-          <p>Open to AI / data / software opportunities, product collaborations and technical conversations.</p>
+        <p class="section-note" data-i18n="thinkingNote">I am interested in the layer between raw information and action: the context, model and software that make a decision executable.</p>
+      </div>
 
-          <div class="contact-links">
-            <a href="https://github.com/mhrhpr" target="_blank" rel="noreferrer"><span>GitHub</span><b>↗</b></a>
-            <!-- TODO: Replace #LINKEDIN with your real LinkedIn URL. -->
-            <a href="#LINKEDIN" data-placeholder-link><span>LinkedIn</span><b>↗</b></a>
-            <!-- TODO: Replace the email placeholder with your professional email. -->
-            <a href="mailto:YOUR.EMAIL@example.com"><span>Email</span><b>↗</b></a>
+      <div class="thinking-grid">
+        <div class="thinking-step">
+          <span>01</span>
+          <h3 data-i18n="think1Title">Observe</h3>
+          <p data-i18n="think1Text">Understand what is actually happening before imposing a model.</p>
+        </div>
+        <div class="thinking-step">
+          <span>02</span>
+          <h3 data-i18n="think2Title">Question</h3>
+          <p data-i18n="think2Text">Find the hidden question that the organization really needs answered.</p>
+        </div>
+        <div class="thinking-step">
+          <span>03</span>
+          <h3 data-i18n="think3Title">Model</h3>
+          <p data-i18n="think3Text">Choose structures, evidence and logic that make the question testable.</p>
+        </div>
+        <div class="thinking-step active-step">
+          <span>04</span>
+          <h3 data-i18n="think4Title">Act</h3>
+          <p data-i18n="think4Text">Turn the answer into a usable workflow, product or decision support system.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section page-shell">
+      <div class="about-grid">
+        <div>
+          <p class="kicker muted"><span>05</span><span data-i18n="aboutKicker">ABOUT</span></p>
+          <h2 data-i18n="aboutTitle">Analytical by training.<br><em>Builder by direction.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p data-i18n="aboutP1">My professional work started close to real organizational data: workforce metrics, dashboards, operational questions and the decisions managers needed to make.</p>
+          <p data-i18n="aboutP2">Computer Science is giving me the engineering half of the equation. I am deliberately combining both sides into a single direction: AI-powered systems that understand business context, work with data and produce useful outcomes.</p>
+          <div class="principles">
+            <div><b>01</b><span data-i18n="principle1">Real problems over demo problems.</span></div>
+            <div><b>02</b><span data-i18n="principle2">Evidence before assumptions.</span></div>
+            <div><b>03</b><span data-i18n="principle3">Useful software over impressive screens.</span></div>
           </div>
-
-          <div class="availability"><span class="status-dot"></span> Open to relocation / international roles</div>
         </div>
+      </div>
+    </section>
+
+    <section class="section skills-section page-shell">
+      <div class="section-head simple">
+        <div>
+          <p class="kicker muted"><span>06</span><span data-i18n="skillsKicker">TECHNICAL FOCUS</span></p>
+          <h2 data-i18n="skillsTitle">A practical stack, not a checklist.</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group"><span>01</span><h3 data-i18n="skill1Title">AI & Product</h3><p>OpenAI APIs · LLM workflows · structured outputs · AI integration · workflow design</p></div>
+        <div class="skill-group"><span>02</span><h3 data-i18n="skill2Title">Data & Analytics</h3><p>Power BI · DAX · Excel · Power Query · Python · SQL · data modeling</p></div>
+        <div class="skill-group"><span>03</span><h3 data-i18n="skill3Title">Software</h3><p>TypeScript · JavaScript · React · Next.js · FastAPI · Prisma · PostgreSQL</p></div>
+        <div class="skill-group"><span>04</span><h3 data-i18n="skill4Title">Engineering</h3><p>GitHub · Linux · APIs · validation · testing · system architecture · Vercel</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact page-shell">
+      <div class="contact-head">
+        <p class="kicker"><span>07</span><span data-i18n="contactKicker">CONTACT</span></p>
+        <h2 data-i18n="contactTitle">Have a difficult data problem?<br><em>Let’s make it executable.</em></h2>
+      </div>
+
+      <div class="contact-body">
+        <p data-i18n="contactText">Open to international AI / data / software opportunities, product collaborations and technically serious conversations.</p>
+
+        <div class="contact-links">
+          <a href="https://github.com/mhrhpr" target="_blank" rel="noreferrer"><span>GitHub</span><b>↗</b></a>
+          <!-- TODO: Replace #LINKEDIN with your real LinkedIn URL. -->
+          <a href="#LINKEDIN" data-placeholder><span>LinkedIn</span><b>↗</b></a>
+          <!-- TODO: Replace the email placeholder with your professional email. -->
+          <a href="mailto:YOUR.EMAIL@example.com"><span>Email</span><b>↗</b></a>
+        </div>
+
+        <div class="contact-note"><span class="status-dot"></span><span data-i18n="contactAvailability">Available for international roles and collaboration.</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer section-shell">
-    <span>© <span id="year"></span> OMIND / OMID HOSSEINPOOR</span>
-    <span>Built around the idea: Human Intent → Working System.</span>
+  <footer class="footer page-shell">
+    <span>© <span id="year"></span> OMID HOSSEINPOOR</span>
+    <span data-i18n="footerText">Built with clarity, evidence and intent.</span>
   </footer>
 
   <script src="app.js"></script>
