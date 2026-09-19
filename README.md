@@ -1,20 +1,30 @@
-# python-engineering-journey
+# Portfolio — Omid Hosseinpoor
 
-This repository documents my journey from Computer Science student to Data Engineer.
+Personal portfolio / resume site for Omid Hosseinpoor.
 
-## Goal
+## Positioning
 
-Become a Data Engineer in Europe by building production-level projects.
+AI & Data Systems Builder — combining business analytics, data systems, software and AI.
 
-## Roadmap
+## Current site
 
-- Python
-- Git
-- Linux
-- SQL
-- Docker
-- Data Engineering
-- Cloud
-- Apache Spark
-- Airflow
-- Portfolio Projects
+Static HTML/CSS/JS, intentionally framework-light for portability and easy deployment.
+
+## TODOs
+
+Search `TODO:` in `index.html` before publishing. The placeholders currently include:
+
+- exact employment dates
+- final CV URL
+- LinkedIn URL
+- professional email
+- final canonical/domain URL
+
+## Selected repositories
+
+- DataNizer — https://github.com/mhrhpr/omindlab-datanizer
+- OMIND Mobility Intelligence — https://github.com/mhrhpr/MOBILITY_LOGISTIC
+- Decision Intelligence — https://github.com/mhrhpr/bichilinger-decision-intelligence
+- PromptShop — https://github.com/mhrhpr/promptsshop
+- World Cup Data Pipeline — https://github.com/mhrhpr/worldcup-2026-data-pipeline
+- OMIND Manager — https://github.com/mhrhpr/omind-manager
