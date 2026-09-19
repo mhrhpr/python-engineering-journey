@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f8fb">
+  <meta name="description" content="قبل‌کار — قبل از تعمیرکار، مشکل را بهتر بفهم و حدود هزینه را بدان.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>قبل‌کار | قبل از تعمیرکار، بدان</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">ق</span>
+        <span><b>قبل‌کار</b><small>قبل از تعمیرکار، بدان</small></span>
+      </a>
+      <nav>
+        <a href="#check">عیب‌یابی سریع</a>
+        <a href="#prices">قیمت مرجع</a>
+        <a href="#how">چطور کار می‌کند</a>
+      </nav>
+      <a href="#request" class="nav-cta">درخواست متخصص</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> خدمات خانه · تهران · MVP</div>
+        <h1>قبل از اینکه پول بدهی، <em>بفهم چه مشکلی داری.</em></h1>
+        <p>قبل‌کار کمک می‌کند قبل از تماس با تعمیرکار، علائم را مرتب کنی، حدود هزینه را ببینی و بدانی چه سؤال‌هایی باید بپرسی.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#check">شروع عیب‌یابی رایگان <span>←</span></a>
+          <a class="btn secondary" href="#prices">دیدن قیمت‌های مرجع <span>↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <span>رایگان برای کاربر</span>
+          <span>بدون نصب اپ</span>
+          <span>بدون ثبت‌نام</span>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <div class="panel-top"><span>BEFORE THE TECHNICIAN</span><span>01</span></div>
+        <div class="decision-card">
+          <div class="decision-icon">✓</div>
+          <b>اول مشکل را مشخص کن</b>
+          <p>بعد قیمت، فوریت و نوع متخصص را بررسی کن.</p>
+        </div>
+        <div class="decision-card pale">
+          <div class="decision-icon">↔</div>
+          <b>قیمت را با مرجع بازار مقایسه کن</b>
+          <p>قیمت‌های مرجع به‌روز هستند، اما قیمت نهایی بعد از بازدید مشخص می‌شود.</p>
+        </div>
+        <div class="decision-card">
+          <div class="decision-icon">?</div>
+          <b>قبل از پرداخت سؤال درست بپرس</b>
+          <p>اجرت، قطعه، ایاب‌وذهاب و ضمانت را جداگانه مشخص کن.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="check" class="section wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-no">02 / CHECK</div>
+          <h2>الان چه مشکلی داری؟</h2>
+        </div>
+        <p>چند سؤال کوتاه؛ بعد یک خلاصه‌ی قابل‌فهم از وضعیت می‌گیری.</p>
+      </div>
+
+      <div class="checker">
+        <div class="stepper">
+          <button class="step active" data-step="1">۱</button><span></span>
+          <button class="step" data-step="2">۲</button><span></span>
+          <button class="step" data-step="3">۳</button>
+        </div>
+
+        <div id="step1" class="step-panel active">
+          <label>نوع خدمت را انتخاب کن</label>
+          <div class="choice-grid">
+            <button class="choice" data-service="plumbing"><span>🚰</span><b>تأسیسات</b><small>لوله، نشتی، گرفتگی</small></button>
+            <button class="choice" data-service="package"><span>♨</span><b>پکیج</b><small>گرمایش، آب گرم، فشار</small></button>
+            <button class="choice" data-service="ac"><span>❄</span><b>کولر گازی</b><small>سرمایش، آبریزی، گاز</small></button>
+            <button class="choice" data-service="electric"><span>⚡</span><b>برق</b><small>فیوز، خاموشی، نوسان</small></button>
+          </div>
+        </div>
+
+        <div id="step2" class="step-panel">
+          <label id="symptomLabel">علامت اصلی چیست؟</label>
+          <div id="symptomChoices" class="choice-grid"></div>
+          <div class="back-row"><button class="link-btn" id="back1">← برگشت</button></div>
+        </div>
+
+        <div id="step3" class="step-panel">
+          <div class="result-layout">
+            <div>
+              <div class="result-label">نتیجه‌ی اولیه</div>
+              <h3 id="resultTitle">—</h3>
+              <p id="resultText">—</p>
+              <div class="result-tags" id="resultTags"></div>
+            </div>
+            <div class="estimate-card">
+              <span>محدوده مرجع</span>
+              <b id="resultPrice">—</b>
+              <small>تومان · راهنمای اولیه، نه قیمت نهایی</small>
+            </div>
+          </div>
+
+          <div class="questions">
+            <div class="result-label">قبل از شروع کار این‌ها را بپرس</div>
+            <div id="questionList"></div>
+          </div>
+
+          <div class="safety" id="safetyBox"></div>
+
+          <div class="result-actions">
+            <a class="btn primary" href="#request">درخواست متخصص ←</a>
+            <button class="btn secondary" id="restart">از اول</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="section tinted">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-no">03 / MARKET REFERENCE</div>
+            <h2>قیمت را قبل از تماس ببین.</h2>
+          </div>
+          <p>این‌ها «محدوده مرجع بازار» هستند؛ هزینه نهایی به جزئیات کار، شرایط محل و قطعه وابسته است.</p>
+        </div>
+
+        <div class="price-grid">
+          <article><span>لوله بازکنی</span><b>۷۰۰٬۰۰۰ تا ۳٬۰۰۰٬۰۰۰</b><small>بر اساس متراژ و سختی کار</small></article>
+          <article><span>لوله‌کشی خرده‌کاری</span><b>۱٬۵۰۰٬۰۰۰ تا ۳٬۰۰۰٬۰۰۰</b><small>پروژه‌های زیر ۱۰ متر</small></article>
+          <article><span>سرویس کامل پکیج</span><b>۲٬۵۰۰٬۰۰۰ تا ۳٬۵۰۰٬۰۰۰</b><small>هر دستگاه</small></article>
+          <article><span>سرویس کولر گازی</span><b>۱٬۲۰۰٬۰۰۰ تا ۱٬۵۰۰٬۰۰۰</b><small>بدون هزینه شارژ گاز</small></article>
+        </div>
+        <div class="source-note">آخرین داده مرجع: شهریور ۱۴۰۵ · منابع: جداول قیمت سنجاق و صفحات قیمت خدمات تهران.</div>
+      </div>
+    </section>
+
+    <section id="how" class="section wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-no">04 / HOW IT WORKS</div>
+          <h2>کمک می‌کند قبل از خرج، <em>آماده باشی.</em></h2>
+        </div>
+      </div>
+      <div class="how-grid">
+        <article><span>01</span><h3>مسئله را بگو</h3><p>به زبان ساده بگو چه چیزی خراب شده و چه علامتی می‌بینی.</p></article>
+        <article><span>02</span><h3>برآورد اولیه بگیر</h3><p>یک محدوده مرجع و سطح فوریت می‌بینی، بدون ادعای تشخیص قطعی.</p></article>
+        <article><span>03</span><h3>درخواست درست بساز</h3><p>خلاصه مشکل و سؤال‌های مهم را آماده کن تا با متخصص گفتگو کنی.</p></article>
+      </div>
+    </section>
+
+    <section id="request" class="section request-section">
+      <div class="wrap request-card">
+        <div>
+          <div class="section-no">05 / REQUEST</div>
+          <h2>متخصص می‌خواهی؟<br><em>درخواستت را ثبت کن.</em></h2>
+          <p>در نسخه MVP، این فرم برای تست تجربه کاربر و ساخت سرنخ است. اتصال به CRM، پیامک و شبکه متخصصان در مرحله بعد اضافه می‌شود.</p>
+        </div>
+        <form id="requestForm" class="request-form">
+          <label>نام<input id="name" required placeholder="مثلاً امید"></label>
+          <label>شماره موبایل<input id="phone" required inputmode="numeric" placeholder="09xxxxxxxxx"></label>
+          <label>خدمت<select id="serviceSelect"><option>تأسیسات</option><option>پکیج</option><option>کولر گازی</option><option>برق</option></select></label>
+          <label>توضیح کوتاه<textarea id="description" rows="4" placeholder="مثلاً آب از زیر سینک نشت می‌کند..."></textarea></label>
+          <button class="btn primary full" type="submit">ساخت درخواست ←</button>
+          <div id="requestResult" class="request-result" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="model-note">
+      <div class="wrap">
+        <div><b>مدل کسب‌وکار اولیه</b><span>کاربر رایگان</span><span>متخصص برای سرنخ واجدشرایط هزینه می‌پردازد</span><span>تمرکز اولیه: تهران</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div><b>قبل‌کار</b><span>قبل از تعمیرکار، بدان.</span></div>
+    <span>© <span id="year"></span> · MVP by OMIND.FORGE</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
