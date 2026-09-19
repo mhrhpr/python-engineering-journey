@@ -154,6 +154,8 @@ em{font-style:normal;color:var(--cyan)}
 .contact-links a{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:11px;color:#afb8c1}
 .contact-links a:hover{color:var(--cyan)}
 .availability{display:flex;gap:8px;align-items:center;margin-top:20px;color:#66747f;font-size:9px;letter-spacing:.08em}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.orbit-a,.orbit-b{animation:none}}
 .site-footer{display:flex;justify-content:space-between;gap:20px;padding:22px 0 30px;border-top:1px solid var(--line);color:#4f5b66;font-size:9px}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:980px){
