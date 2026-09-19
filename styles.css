@@ -54,23 +54,23 @@ em{font-style:normal;color:var(--cyan)}
 .hero-meta{display:flex;gap:18px;flex-wrap:wrap;color:#566274;font-size:10px;margin-top:24px}
 .hero-meta span:before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:#37424c;margin:0 8px 2px 0}
 .hero-system{height:620px;position:relative;display:grid;place-items:center}
-.orbit{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.06)}
-.orbit-a{width:570px;height:570px;border-color:rgba(11,140,147,.16);animation:spin 38s linear infinite}
-.orbit-b{width:410px;height:410px;border-style:dashed;animation:spin 25s linear reverse infinite}
-.orbit-c{width:250px;height:250px;border-color:rgba(255,255,255,.12)}
-.orbit:after{content:"";position:absolute;left:50%;top:-3px;width:6px;height:6px;background:var(--cyan);border-radius:50%;box-shadow:0 0 18px var(--cyan)}
-.system-core{width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 38% 30%,#314664,#1d2b40 62%);border:1px solid rgba(37,99,235,.28);box-shadow:0 18px 60px rgba(15,23,42,.18),0 0 55px rgba(37,99,235,.08),inset 0 0 34px rgba(255,255,255,.06);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;z-index:2}
-.core-kicker{font-size:8px;letter-spacing:.18em;color:#6b7987}
-.core-title{font-size:26px;letter-spacing:.12em;font-weight:700}
-.core-line{display:grid;grid-template-columns:18px auto 18px;align-items:center;gap:6px;font-size:8px;color:#94a3af;letter-spacing:.16em;width:122px}
-.core-line span{height:1px;background:rgba(85,230,255,.22)}
+.orbit{position:absolute;border-radius:50%;border:1px solid rgba(37,99,235,.10)}
+.orbit-a{width:570px;height:570px;border-color:rgba(37,99,235,.15);animation:spin 38s linear infinite}
+.orbit-b{width:410px;height:410px;border-style:dashed;border-color:rgba(100,116,139,.17);animation:spin 25s linear reverse infinite}
+.orbit-c{width:250px;height:250px;border-color:rgba(37,99,235,.18)}
+.orbit:after{content:"";position:absolute;left:50%;top:-3px;width:6px;height:6px;background:#2563eb;border-radius:50%;box-shadow:0 0 14px rgba(37,99,235,.28)}
+.system-core{width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 38% 28%,#ffffff,#eef4ff 68%,#e8eef8);border:1px solid rgba(37,99,235,.22);box-shadow:0 20px 55px rgba(15,23,42,.12),0 0 70px rgba(37,99,235,.09);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;z-index:2}
+.core-kicker{font-size:8px;letter-spacing:.18em;color:#64748b}
+.core-title{font-size:26px;letter-spacing:.12em;font-weight:800;color:#172033}
+.core-line{display:grid;grid-template-columns:18px auto 18px;align-items:center;gap:6px;font-size:8px;color:#536174;letter-spacing:.16em;width:122px}
+.core-line span{height:1px;background:rgba(37,99,235,.20)}
 .core-line b{font-weight:600;text-align:center}
-.floating-card{position:absolute;z-index:3;padding:12px 14px;border:1px solid var(--line);background:rgba(12,16,21,.84);backdrop-filter:blur(12px);border-radius:14px;box-shadow:var(--shadow)}
-.floating-card small{display:block;color:#5c6879;font-size:8px;letter-spacing:.16em}
-.floating-card strong{display:block;font-size:12px;margin-top:4px}
-.card-one{top:78px;right:34px}
-.card-two{bottom:86px;left:12px}
-.card-three{bottom:148px;right:16px}
+.floating-card{position:absolute;z-index:3;padding:12px 14px;border:1px solid rgba(23,32,51,.10);background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-radius:14px;box-shadow:0 14px 32px rgba(15,23,42,.08)}
+.floating-card small{display:block;color:#718096;font-size:8px;letter-spacing:.16em}
+.floating-card strong{display:block;font-size:12px;margin-top:4px;color:#25334a}
+.card-one{top:78px;right:34px;border-color:rgba(37,99,235,.14)}
+.card-two{bottom:86px;left:12px;border-color:rgba(23,32,51,.10)}
+.card-three{bottom:148px;right:16px;border-color:rgba(37,99,235,.14)}
 .signal-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.015)}
 .signal-track{display:flex;align-items:center;gap:17px;min-height:55px;overflow:hidden;color:#566274;font-size:9px;letter-spacing:.2em;white-space:nowrap}
 .content-section{padding-block:118px}
